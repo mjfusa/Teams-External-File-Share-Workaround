@@ -3,16 +3,16 @@
 Prerequisites: 
 1) External File Sharing is disabled for all Teams. By default, external file sharing is enabled. https://learn.microsoft.com/en-us/sharepoint/turn-external-sharing-on-or-off
 
-2) Name of the 'Documents' folder is the same name as the Team. If Team is named 'HelloWorld', the folder name should be named 'HelloWorld-Documents'.
+2) The name of the 'Documents' folder is the same as the Team. If the Team is named 'HelloWorld', the folder name should be named 'HelloWorld-Documents'.
 
 Requirement: For a given Team, external file sharing is disabled by default. External file sharing is required for specific channels named for external sharing.
 
 Current workaround: Create a separate 'external share' SharePoint site for external file Sharing
 Limitations:
-1) No 'Add Shortcut to OneDrive' not available on the tool bar.
+1) No 'Add Shortcut to OneDrive' not available on the toolbar.
 ![](./Images/SyncWithGroup.png)
 
-2. Mitigation: When the 'external share' SharePoint site is created:
+   Mitigation: When the 'external share' SharePoint site is created:
 
       1) Rename the 'Documents' folder to 'External Documents' and Team Name. For example: 
       
@@ -34,11 +34,11 @@ Limitations:
 
 2) Shortcuts to OneDrive (Team SharePoint and External File Sharepoint) have unrelated folder names. For example 'Documents TestClint-TestMatter-XXXXXX' and 'Shared Documents'.
 
-Mitgation: See the step above for creating the 'external share' SharePoint site. Renaming the Document site as suggested will place these nearby each other in File Explorer.
+   Mitigation: See the step above for creating the 'external share' SharePoint site. Renaming the Document site as suggested will place these nearby each other in File Explorer.
 
 
-2) Team owners don't receive external access expiration notifications go to Team owners.
+3) Team owners don't receive external access expiration notifications go to Team owners.
 
-Mitigation:  When a Team is created, a User Group is created in AAD. Modify the permission of the External File Sharepoint site and grant access to this user group. Make sure the update the Owners of the site to match the owners as listed in the AAD group.
+   Mitigation:  When a Team is created, a User Group is created in AAD. Modify the permission of the External File Sharepoint site and grant access to this user group. Make sure the update the Owners of the site to match the owners as listed in the AAD group.
 
-![External Site Permissons](./Images/ExternalSitePermissions.png)
+![External Site Permissions](./Images/ExternalSitePermissions.png)
