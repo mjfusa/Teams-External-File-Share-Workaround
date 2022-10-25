@@ -1,4 +1,4 @@
-## External File Share by Channel
+## External File Share by Channel - Workaround
 
 Requirement: For a given Team, external file sharing is disabled by default. External file sharing is required for specific channels named for external sharing. The following is a workaround that should satisfy most external document sharing requirements.
 
